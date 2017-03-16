@@ -12,21 +12,80 @@ extends(src='layout.sgr')
             img.run-man(src='img/run-2.png' alt='photo of comic book man')
       nav#myNav.navbar.navbar-default
         .navbar-header
-          button.navbar-toggle.collapse(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav
-              li.hvr-float
-                a(href='#home') Home
-              li.hvr-float
-                a(href='#events') Events
-              li.hvr-float
-                a(href='#blog') Blog
-      .main.wrapper.clearfix
-        aside
-          h2.text-center Welcome to North Georgia Running
-          p North Georgia has mile and miles of the finest twisty, challenging, trails and roads for running. There are many running events happening every weekend be it an ultra-marathon or 5k/10k . We have it all here in North Georgia.
-          img.img-responsive.img-aside(src="http://www.lorempixel.com/g/500/310/nature/4" alt="photo of road")
+              li
+                a(href='index.html') Home
+              li
+                a(href='#Photos') Photos
+              li
+                a(href="blog.html") Blog
+      .main-container
+        .main.wrapper.clearfix
+          aside
+            h2.text-center Welcome to North Georgia Running
+            p North Georgia has mile and miles of the finest twisty, challenging, trails and roads for running. There are many running events happening every weekend be it an ultra-marathon or 5k/10k . We have it all here in North Georgia.
+            img.img-responsive.img-aside(src="http://www.lorempixel.com/g/500/310/nature/4" alt="photo of road")
+          article
+            header
+              h1.text-center Upcoming events
+              hr.road
+              script.
+               new ActiveNetwork.NearYouWidget({
+                            "title": "NEAR YOU",
+                            "num": "20",
+                            "keywords": "running",
+                            "activity": "running",
+                            "showActivitySelector": true,
+                            "type": "event",
+                            "location": "30064",
+                            "showLocationSelector": true,
+                            "affiliate": "417168",
+                            "placement": "#events",
+                            "campaign": "150457",
+                            "style": {
+                                "frame": {
+                                    "background-color": "#EDE3B8"
+                                },
+                                "title": {
+                                    "color": "#EDE3B8"
+                                },
+                                "window": {
+                                    "background-color": "#F7F2E4"
+                                },
+                                "text": {
+                                    "color": "#5b5c5c",
+                                    "border-color": "#5b5c5c"
+                                },
+                                "links": {
+                                    "color": "#972504"
+                                },
+                                "buttons": {
+                                    "background-color": "#972504"
+                                },
+                                "tags": {
+                                    "background-color": "#eeeeee"
+                                }
+                            }
+                        }).render();
+      .footer.clearfix
+        footer
+          .col-xs-12.col-md-6.active-banner
+            a(href='http://www.tantracking.com/click.track?CID=147549&AFID=417168&ADID=1758197&SID=')
+              img(src='http://www.tantracking.com/impression.track?CID=147549&AFID=417168&ADID=1758197&SID=' border='0' )
+          .col-xs-12.col-md-6.social-icons
+            a(href="#")
+              span.facebook.fa.fa-facebook-square.fa-3x
+            a(href="https://www.instagram.com/northgeorgiarunning/")
+              span.instagram.fa.fa-instagram.fa-3x
+            a(href="https://twitter.com/northgeorgiarun")
+              span.twitter.fa.fa-twitter-square.fa-3x
+            a(href="https://medium.com/@northgeorgiarun")
+              span.medium.fa.fa-medium.fa-3x
+            a(href="#")
+              span.stumble.fa.fa-stumbleupon.fa-3x

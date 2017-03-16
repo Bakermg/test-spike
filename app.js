@@ -28,5 +28,6 @@ module.exports = {
       recordsPath: path.join(__dirname, '_cache/records.json'),
       cacheDirectory: path.join(__dirname, '_cache/hard_source_cache')
     })
-  ]
+  ],
+  vendor: 'assets/vendor/**'
 }

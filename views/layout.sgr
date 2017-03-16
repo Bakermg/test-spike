@@ -12,6 +12,9 @@ html
       title North Georgia Running
 
     block(name='stylesheets')
+      script(type="text/javascript" src="http://widgets.active.com/widgets/nearyou/widget-a3.min.js")
+      script(src="https://use.fontawesome.com/dd8acc7905.js")
+      script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
       link(href='https://fonts.googleapis.com/css?family=Yellowtail|Oswald' rel='stylesheet')
       link(rel='stylesheet' href='css/bootstrap.min.css')
       link(rel='stylesheet' href='css/index.css')
@@ -21,6 +24,6 @@ html
       block(name='content')
 
     block(name='javascript')
-      script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+      script(src='vendor/bootstrap.min.js')
+      script(src='vendor/jq-sticky-anything.min.js')
       script(src='js/main.js' defer)

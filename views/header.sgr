@@ -1,0 +1,24 @@
+.container.main-section
+  .jumbotron
+    .row
+      .col-xs-10.col-sm-10
+        h1.title North Georgia
+        h2 Running
+        img.mountain.img-responsive(src='img/mountain-1.png' alt='cartoon mountain photo')
+      .col-xs-2.col-sm-2.run-img
+        img.run-man(src='img/run-2.png' alt='photo of comic book man')
+  nav#myNav.navbar.navbar-default
+    .navbar-header
+      button.navbar-toggle.collapse(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li.hvr-float
+            a(href='index.html') Home
+          li.hvr-float
+            a(href='#Photos') Photos
+          li.hvr-float
+            a(href="blog.html") Blog

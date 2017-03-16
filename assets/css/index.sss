@@ -3,6 +3,8 @@
 .main-section
   background: var(--lightMainColor)
   padding: 60px 40px
+  @media (max-width: 637px)
+    padding: 10px
 
 .container .jumbotron
   background: var(--jumboColor)
@@ -17,6 +19,12 @@
   color: #f4f4e5
   letter-spacing: .01em
   margin: -40px 0 0 -40px
+  @media  (max-width: 990px)
+    font-size: 3.6em
+  @media (max-width: 768px)
+    margin: -20px 0 0 0
+  @media (max-width: 637px)
+    font-size: 3.5em
 
 .jumbotron h2
   color: #e9bc61
@@ -24,12 +32,30 @@
   text-transform: uppercase
   letter-spacing: .03em
   margin: 0 0 82px -40px
+  @media  (max-width: 990px)
+    padding: 0
+  @media (max-width: 768px)
+    margin: 0
+  @media (max-width: 637px)
+    font-size: 2.5em
 
 .run-man
   margin: 0
+  margin-top: 158px
+  @media  (max-width: 991px)
+    margin-top: 130px
+    margin-left: -45px
+  @media (max-width: 768px)
+    margin-left: -95px
+  @media (max-width: 637px)
+    display: none
 
 .mountain
   margin-left: -60px
+  @media  (max-width: 990px)
+    margin-top: 28px
+  @media (max-width: 768px)
+    margin: 62px 0 0 -15px
 
 #navbar
   background: #E7B35C
@@ -38,7 +64,6 @@
 
 .navbar
   border: none
-  margin-bottom: 35px
   background: #E7B35C
   background: linear-gradient(#debb5d, #e7b35c)
 
@@ -75,6 +100,14 @@ aside
   border: 2px solid #d6762c
   outline: 10px solid #ede3b8
   border-radius: 2px
+  @media  (max-width: 990px)
+    width: 97%
+    margin: 0
+    margin: 0 0 20px 10px
+  @media (max-width: 637px)
+    width: 96%
+  @media (max-width: 450px)
+    width: 95%
 
 aside h2
   color: #a86421
@@ -86,6 +119,98 @@ aside h2
 
 aside h3
   color: #972504
+
+.img-aside
+  margin: auto
+  padding: 10px
+
+.main article
+  float: right
+  width: 36%
+  background: #d8782d
+  background: linear-gradient(#d8782d, #cd762b)
+  border-radius: 2px
+  text-align: center
+  @media  (max-width: 990px)
+    width: 100%
+    margin: 0
+
+.main article header h1
+  color: #ede3b8
+  font-size: 2.5em
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: 0.3em
+  padding: 0 0 10px 0
+  margin-top: 5px
+
+.main article p
+  padding: 30px 15px 0 15px
+
+.road
+  padding: 0
+  border: none
+  border-top: solid 5px
+  text-align: center
+  max-width: 250px
+  margin: 25px auto 30px
+
+.road:after
+  content: "\f018"
+  font-family: FontAwesome
+  display: inline-block
+  position: relative
+  top: -0.8em
+  font-size: 2em
+  padding: 0.15em 0.25em
+
+.road
+  border-color: #972504
+
+.road:after
+  background-color: #d6772c
+  color: #972504
+
+.footer
+  background: #e9ba68
+  margin: 10px 0 0 0
+
+footer img
+  padding: 15px
+
+.social-icons
+  padding: 60px  0 0 100px
+  @media (max-width: 990px)
+    clear: both
+    text-align: center
+    padding: 0
+  @media (max-width: 767px)
+    width: 100%
+    padding: 10px 15px 0
+
+.active-banner
+  @media (max-width: 990px)
+    clear: both
+    text-align: center
+
+.footer span
+  margin: 5px
+
+
+.twitter
+  color: #1DA1F2
+
+.fa-facebook
+  color: #3B5998
+
+.medium
+  color: #02B875
+
+.instagram
+  color: #8a3ab9
+
+.stumble
+  color: #EB4924
 
 .clearfix:before,
 .clearfix:after
