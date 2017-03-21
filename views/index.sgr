@@ -29,7 +29,7 @@ extends(src='layout.sgr')
         .main.wrapper.clearfix
           aside
             h2.text-center Welcome to North Georgia Running
-            p North Georgia has mile and miles of the finest twisty, challenging, trails and roads for running. There are many running events happening every weekend be it an ultra-marathon or 5k/10k . We have it all here in North Georgia.
+            p North Georgia has miles and miles of awesome twisty, challenging, running trails and roads for running. There are numerous running events happening all around North Georgia every weekend,  be it an ultra-marathon, marathon, half-marathon or 5k/10k  race. We have it all here in North Georgia and this is the place to come to find information for all things running here.
             img.img-responsive.img-aside(src="http://www.lorempixel.com/g/500/310/nature/4" alt="photo of road")
           article
             header
