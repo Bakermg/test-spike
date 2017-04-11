@@ -1,6 +1,6 @@
-# test
+# Spike Static Site Generator
 
-testing spike
+North Georgia Running version 1
 
 ## Setup
 
@@ -10,7 +10,5 @@ testing spike
 - run `npm install`
 - run `spike watch` or `spike compile`
 
-## Testing
-Tests are located in `test/**` and are powered by [ava](https://github.com/sindresorhus/ava)
-- `npm install` to ensure devDeps are installed
-- `npm test` to run test suite
+## North Georgia Running Site
+- using spike and jetpack on wordpress site to update static site from wordpress api and to rebuild static site when wordpress is updated through wordpress ui.
